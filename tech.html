@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technolgy</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#" class="logo"> Contact:cartmania@gmail.com </a>
+        <div class="box">
+          <div class="cart-count">0</div>
+          <ion-icon name="cart" id="cart-icon"></ion-icon>
+        </div>
+
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content"></div>
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+          </div>
+
+          <button class="btn-buy">Place Order</button>
+
+          <ion-icon name="close" id="cart-close"></ion-icon>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>THE TRENDING TECH</h1>
+      <div class="control">
+        <div class="btn-group">
+          <button class="btn btn-clicked" data-filter="all">All</button>
+          <button class="btn" data-filter="Smart Phone">Smart Phone</button>
+          <button class="btn" data-filter="Smart Watch">Smart Watch</button>
+          <button class="btn" data-filter="Laptops">Laptops</button>
+          <button class="btn" data-filter="Others">Others</button>
+        </div>
+      </div>
+      <div class="int">
+        <input type="text" placeholder="Search products" id="search" />
+      </div>
+      <div class="shop-content">
+        <div class="product-box" data-item="Laptops" data-cat="Laptops">
+          <div class="pic">
+            <img src="Mac Book Air .jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Mac Book Air</h2>
+          <span class="product-price"
+            ><del>Rs.201050</del> <br />
+            Rs.180000</span
+          >
+        </div>
+
+        <div class="product-box" data-item="Laptops" data-cat="Laptops">
+          <div class="pic">
+            <img src="laptop1.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Asus Laptop</h2>
+          <span class="product-price"
+            ><del>Rs.260000</del> <br />
+            Rs.200350</span
+          >
+        </div>
+
+        <div class="product-box" data-item="Laptops" data-cat="Laptops">
+          <div class="pic"><img src="laptop2.jpeg" class="product-img" /></div>
+          <h2 class="product-title">Acer Laptop</h2>
+          <span class="product-price"
+            ><del>Rs.225000</del> <br />
+            Rs.180000</span
+          >
+        </div>
+
+        <div class="product-box" data-item="Smart Watch" data-cat="Smart Watch">
+          <div class="pic">
+            <img src="galaxy.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Galaxy Watch</h2>
+          <span class="product-price"
+            ><del>Rs.26500</del> <br />
+            Rs.20400</span
+          >
+        </div>
+        <div class="product-box" data-item="Smart Watch" data-cat="Smart Watch">
+          <div class="pic"><img src="iwatch.jpeg" class="product-img" /></div>
+          <h2 class="product-title">Apple Watch Series 6</h2>
+          <span class="product-price"
+            ><del>Rs.23000</del> <br />
+            Rs.19050</span
+          >
+        </div>
+        <div class="product-box" data-item="Smart Watch" data-cat="Smart Watch">
+          <div class="pic">
+            <img src="redmi watch 2.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">redmi watch 2</h2>
+          <span class="product-price"
+            ><del>Rs.27000</del> <br />
+            Rs.20999</span
+          >
+        </div>
+        <div class="product-box" data-item="Smart Phone" data-cat="Smart Phone">
+          <div class="pic">
+            <img src="vivo T2.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">vivo T2</h2>
+          <span class="product-price"
+            ><del>Rs.28000</del> <br />
+            Rs.19000</span
+          >
+        </div>
+        <div class="product-box" data-item="Smart Phone" data-cat="Smart Phone">
+          <div class="pic">
+            <img src="redmi note 12 pro +.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">redmi note 12 pro +</h2>
+          <span class="product-price"
+            ><del>Rs.18000</del> <br />
+            Rs.10999</span
+          >
+        </div>
+        <div class="product-box" data-item="Smart Phone" data-cat="Smart Phone">
+          <div class="pic">
+            <img src="iphone 13 pro max.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">iphone 13 pro max</h2>
+          <span class="product-price"
+            ><del>Rs.160000</del> <br />
+            Rs.89999</span
+          >
+        </div>
+        <div class="product-box" data-item="speakers" data-cat="Others">
+          <div class="pic">
+            <img src="alexa.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Alexa</h2>
+          <span class="product-price"
+            ><del>Rs.10000</del> <br />
+            Rs.4999</span
+          >
+        </div>
+        <div class="product-box" data-item="Headphone" data-cat="Others">
+          <div class="pic">
+            <img src="sony wireless.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">sony wireless</h2>
+          <span class="product-price"
+            ><del>Rs.7000</del> <br />
+            Rs.4999</span
+          >
+        </div>
+        <div class="product-box" data-item="Mouse" data-cat="Others">
+          <div class="pic">
+            <img src="Gaming  Mouse.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">"Gaming  Mouse</h2>
+          <span class="product-price"
+            ><del>Rs.7000</del> <br />
+            Rs.2999</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="newjs.js"></script>
+  </body>
+</html>
+
+

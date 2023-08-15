@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#" class="logo"> Contact:cartmania@gmail.com </a>
+        <div class="box">
+          <div class="cart-count">0</div>
+          <ion-icon name="cart" id="cart-icon"></ion-icon>
+        </div>
+
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content"></div>
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+          </div>
+
+          <button class="btn-buy">Place Order</button>
+
+          <ion-icon name="close" id="cart-close"></ion-icon>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>THE TRENDING TECH</h1>
+      <div class="control">
+        <div class="btn-group">
+          <button class="btn btn-clicked" data-filter="all">All</button>
+          <button class="btn" data-filter="T-Shirt">T-Shirt</button>
+          <button class="btn" data-filter="Shirt">Shirt</button>
+          <button class="btn" data-filter="Accessories">Accessories</button>
+          <button class="btn" data-filter="FootWears">FootWears</button>
+        </div>
+      </div>
+      <div class="int">
+        <input type="text" placeholder="Search products" id="search" />
+      </div>
+
+      <div class="shop-content">
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="image1.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Blue T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2600</del> <br />
+            Rs.2350</span
+          >
+        </div>
+
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="RoundNeck T-shirt.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">White Round Neck T-shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2600</del> <br />
+            Rs.2350</span
+          >
+        </div>
+
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Grey T-Shirt.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Grey T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2250</del> <br />
+            Rs.1800</span
+          >
+        </div>
+
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Yellow & White T-Shirt.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Yellow & White T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2650</del> <br />
+            Rs.2400</span
+          >
+        </div>
+        <div class="product-box" data-item="Shirt" data-cat="Shirt">
+          <div class="pic">
+            <img src="Checked Shirt.jpg" class="product-img" style="height: 300px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Checked Formal Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2300</del> <br />
+            Rs.1950</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Tri Colour T-Shirt.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Tri Colour T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1700</del> <br />
+            Rs.1250</span
+          >
+        </div>
+
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Stay-Groovy T-shirt.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Stay-Groovy T-shirt</h2>
+          <span class="product-price"
+            ><del>Rs.2800</del> <br />
+            Rs.2450</span
+          >
+        </div>
+
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="White Star Wars T-Shirt.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">White Star Wars T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="basket Ball T-Shirt.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Basket Ball T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Hakuna Matata T-shirt .jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Hakuna Matata T-shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="Shirt" data-cat="Shirt">
+          <div class="pic">
+            <img src="Formal shirt.jpg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Checked Formal Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1800</del> <br />
+            Rs.1499</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Just Do It T-Shirt.jpeg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Just Do It T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Never Give Up T-Shirt.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Never Give Up T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="T-shirt" data-cat="T-Shirt">
+          <div class="pic">
+            <img src="Black Cross T-shirt.jpeg" class="product-img" />
+          </div>
+          <h2 class="product-title">Black Cross T-Shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1050</del> <br />
+            Rs.800</span
+          >
+        </div>
+        <div class="product-box" data-item="Shirt" data-cat="Shirt">
+          <div class="pic">
+            <img src="casual white shirt.jpg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Casual white shirt</h2>
+          <span class="product-price"
+            ><del>Rs.1199</del> <br />
+            Rs.899</span
+          >
+        </div>
+
+        <div class="product-box" data-item="Watch" data-cat="Accessories">
+          <div class="pic">
+            <img
+              src="Casio Edifice Analog Blue Dial Men's Watch .jpeg"
+              class="product-img"
+            />
+          </div>
+          <h2 class="product-title">Casio Edifice Analog Blue Dial Men's Watch</h2>
+          <span class="product-price"
+            ><del>Rs.2600</del> <br />
+            Rs.2350</span
+          >
+        </div>
+        <div class="product-box" data-item="Shoe" data-cat="FootWears">
+          <div class="pic">
+            <img src="Sneakers.jpg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Sneakers</h2>
+          <span class="product-price"
+            ><del>Rs.1349</del> <br />
+            Rs.899</span
+          >
+        </div>
+
+        <div class="product-box" data-item="edifice" data-cat="Accessories">
+          <div class="pic">
+            <img src="Silver Edifice.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Edifice Silver</h2>
+          <span class="product-price"
+            ><del>Rs.2650</del> <br />
+            Rs.2400</span
+          >
+        </div>
+        <div class="product-box" data-item="Fossil" data-cat="Accessories">
+          <div class="pic">
+            <img src="Fossil Gold.jpg" class="product-img" />
+          </div>
+          <h2 class="product-title">Fossil Analog Blue Dial Men's Watch</h2>
+          <span class="product-price"
+            ><del>Rs.2300</del> <br />
+            Rs.1950</span
+          >
+        </div>
+        <div class="product-box" data-item="Shoe" data-cat="FootWears">
+          <div class="pic">
+            <img src="sneakers2.jpg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Sneakers</h2>
+          <span class="product-price"
+            ><del>Rs.1399</del> <br />
+            Rs.949</span
+          >
+        </div>
+        <div class="product-box" data-item="Sunglasses" data-cat="Accessories">
+          <div class="pic">
+            <img src="sunglass.jpg" class="product-img" style="height: 500px; width: auto;"/>
+          </div>
+          <h2 class="product-title">Sunglass</h2>
+          <span class="product-price"
+            ><del>Rs.1649</del> <br />
+            Rs.1199</span
+          >
+        </div>
+
+        
+      </div>
+    </div>
+    <script src="newjs.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
