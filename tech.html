@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technolgy</title>
+    <title>Cart Mania</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+      /* Include the CSS you have already defined here */
+    </style>
+  </head>
   <body>
     <header>
-
+      <div class="nav">
+        <a href="#" class="logo">Cart Mania</a>
+        <div class="box">
+          <ion-icon id="cart-icon" name="cart-outline"></ion-icon>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
     </header>
     <div class="container">
       <h1>Cart Mania🛒⚡</h1>
@@ -21,17 +32,18 @@
           <button class="btn" data-filter="Others">Others</button>
         </div>
       </div>
-      <div> <input type="text" placeholder="Search products" id="search"></div>
+      <div>
+        <input type="text" placeholder="Search products" id="search" />
+      </div>
       <div class="shop-content">
+        <!-- Product Items -->
         <div class="product-box" data-item="laptops" data-cat="Laptops">
           <div class="pic">
             <img src="Mac Book Air .jpeg" class="product-img" />
           </div>
           <h2 class="product-title">Mac Book Air</h2>
-          <span class="product-price"
-            ><del>Rs.201050</del> <br />
-            Rs.180000</span
-          >
+          <span class="product-price"><del>Rs.201050</del> <br /> Rs.180000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
 
         <div class="product-box" data-item="laptops" data-cat="Laptops">
@@ -39,19 +51,17 @@
             <img src="laptop1.jpeg" class="product-img" />
           </div>
           <h2 class="product-title">Asus Laptop</h2>
-          <span class="product-price"
-            ><del>Rs.260000</del> <br />
-            Rs.200350</span
-          >
+          <span class="product-price"><del>Rs.260000</del> <br /> Rs.200350</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
 
         <div class="product-box" data-item="laptops" data-cat="Laptops">
-          <div class="pic"><img src="laptop2.jpeg" class="product-img" /></div>
+          <div class="pic">
+            <img src="laptop2.jpeg" class="product-img" />
+          </div>
           <h2 class="product-title">Acer Laptop</h2>
-          <span class="product-price"
-            ><del>Rs.225000</del> <br />
-            Rs.180000</span
-          >
+          <span class="product-price"><del>Rs.225000</del> <br /> Rs.180000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
 
         <div class="product-box" data-item="smartwatch" data-cat="Smart Watch">
@@ -59,93 +69,100 @@
             <img src="galaxy.jpeg" class="product-img" />
           </div>
           <h2 class="product-title">Galaxy Watch</h2>
-          <span class="product-price"
-            ><del>Rs.26500</del> <br />
-            Rs.20400</span
-          >
+          <span class="product-price"><del>Rs.26500</del> <br /> Rs.20400</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="smartwatch" data-cat="Smart Watch">
-          <div class="pic"><img src="iwatch.jpeg" class="product-img" /></div>
+          <div class="pic">
+            <img src="iwatch.jpeg" class="product-img" />
+          </div>
           <h2 class="product-title">Apple Watch Series 6</h2>
-          <span class="product-price"
-            ><del>Rs.23000</del> <br />
-            Rs.19050</span
-          >
+          <span class="product-price"><del>Rs.23000</del> <br /> Rs.19050</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="smartwatch" data-cat="Smart Watch">
           <div class="pic">
             <img src="redmi watch 2.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">redmi watch 2</h2>
-          <span class="product-price"
-            ><del>Rs.27000</del> <br />
-            Rs.20999</span
-          >
+          <h2 class="product-title">Redmi Watch 2</h2>
+          <span class="product-price"><del>Rs.27000</del> <br /> Rs.20999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="smartphone" data-cat="Smart Phone">
           <div class="pic">
             <img src="vivo T2.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">vivo T2</h2>
-          <span class="product-price"
-            ><del>Rs.28000</del> <br />
-            Rs.19000</span
-          >
+          <h2 class="product-title">Vivo T2</h2>
+          <span class="product-price"><del>Rs.28000</del> <br /> Rs.19000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="smartphone" data-cat="Smart Phone">
           <div class="pic">
             <img src="redmi note 12 pro +.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">redmi note 12 pro +</h2>
-          <span class="product-price"
-            ><del>Rs.18000</del> <br />
-            Rs.10999</span
-          >
+          <h2 class="product-title">Redmi Note 12 Pro +</h2>
+          <span class="product-price"><del>Rs.18000</del> <br /> Rs.10999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="smartphone" data-cat="Smart Phone">
           <div class="pic">
             <img src="iphone 13 pro max.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">iphone 13 pro max</h2>
-          <span class="product-price"
-            ><del>Rs.160000</del> <br />
-            Rs.89999</span
-          >
+          <h2 class="product-title">iPhone 13 Pro Max</h2>
+          <span class="product-price"><del>Rs.160000</del> <br /> Rs.89999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="speakers" data-cat="Others">
           <div class="pic">
             <img src="alexa.jpeg" class="product-img" />
           </div>
           <h2 class="product-title">Alexa</h2>
-          <span class="product-price"
-            ><del>Rs.10000</del> <br />
-            Rs.4999</span
-          >
+          <span class="product-price"><del>Rs.10000</del> <br /> Rs.4999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="headphone" data-cat="Others">
           <div class="pic">
             <img src="sony wireless.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">sony wireless</h2>
-          <span class="product-price"
-            ><del>Rs.7000</del> <br />
-            Rs.4999</span
-          >
+          <h2 class="product-title">Sony Wireless</h2>
+          <span class="product-price"><del>Rs.7000</del> <br /> Rs.4999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
+
         <div class="product-box" data-item="mouse" data-cat="Others">
           <div class="pic">
-            <img src="Gaming  Mouse.jpeg" class="product-img" />
+            <img src="Gaming Mouse.jpeg" class="product-img" />
           </div>
-          <h2 class="product-title">"Gaming  Mouse</h2>
-          <span class="product-price"
-            ><del>Rs.7000</del> <br />
-            Rs.2999</span
-          >
+          <h2 class="product-title">Gaming Mouse</h2>
+          <span class="product-price"><del>Rs.7000</del> <br /> Rs.2999</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
         </div>
       </div>
     </div>
+
+    <!-- Cart -->
+    <div class="cart">
+      <div class="cart-title">
+        <span>Shopping Cart</span>
+        <ion-icon id="cart-close" name="close-outline"></ion-icon>
+      </div>
+      <div class="cart-content">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="total">
+        <span class="total-title">Total:</span>
+        <span class="total-price">Rs.0</span>
+      </div>
+      <button class="btn-buy">Buy Now</button>
+    </div>
+
     <script src="newjs.js"></script>
   </body>
 </html>
-
-
