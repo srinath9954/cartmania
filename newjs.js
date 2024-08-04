@@ -1,6 +1,6 @@
 const buttons=document.querySelectorAll('.btn');
 const boxes=document.querySelectorAll('.product-box');
-const searchBox=document.querySelector("#search");
+const searchBox = document.querySelector("#search");
 
 searchBox.addEventListener('keyup',(e)=>{
     searchText=e.target.value.toLowerCase().trim();
@@ -13,11 +13,8 @@ searchBox.addEventListener('keyup',(e)=>{
         box.style.display='none';
       }
     });
-    buttons.forEach((button)=>{
-        button.classList.remove('btn-clicked');
-      });
-      buttons[0].classList.add('btn-clicked');
 });
+
 buttons.forEach((button)=>{
     button.addEventListener('click',(e)=>{
   
@@ -49,7 +46,7 @@ buttons.forEach((button)=>{
     });
     e.target.classList.add('btn-clicked');
   }
-  const btnCart=document.querySelector('#cart-icon');
+const btnCart=document.querySelector('#cart-icon');
 const cart=document.querySelector('.cart');
 const btnClose=document.querySelector('#cart-close');
 
